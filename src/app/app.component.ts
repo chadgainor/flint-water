@@ -14,6 +14,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ListMasterPage } from '../pages/list-master/list-master';
 import { MenuPage } from '../pages/menu/menu';
 import { SettingsPage } from '../pages/settings/settings';
+import { TimelinePage } from '../pages/timeline/timeline';
+import { CounterPage } from '../pages/counter/counter';
 import { SearchPage } from '../pages/search/search';
 
 import { TranslateService } from 'ng2-translate/ng2-translate';
@@ -51,6 +53,8 @@ export class MyApp {
     { title: 'Map', component: MapPage },
     { title: 'Master Detail', component: ListMasterPage },
     { title: 'Menu', component: MenuPage },
+    { title: 'Timeline', component: TimelinePage },
+    { title: 'Counter', component: CounterPage },
     { title: 'Settings', component: SettingsPage },
     { title: 'Search', component: SearchPage }
   ]

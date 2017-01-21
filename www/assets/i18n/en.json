@@ -14,6 +14,7 @@
   "TAB4_TITLE": "How to Help",
 
   "MAP_TITLE": "Map",
+  "TIMELINE_TITLE": "Timeline",
 
   "TUTORIAL_SKIP_BUTTON" : "Skip",
   "TUTORIAL_CONTINUE_BUTTON" : "Continue",
@@ -62,7 +63,7 @@
   "CANCEL_BUTTON" : "Cancel",
   "DELETE_BUTTON" : "Delete",
 
-  "CARDS_TITLE": "Social",
+  "CARDS_TITLE": "News",
 
   "SEARCH_TITLE": "Search",
   "SEARCH_PLACEHOLDER" : "Search the items list, e.g. \"Donald Duck\""

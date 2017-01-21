@@ -1,0 +1,74 @@
+<!--
+  Generated template for the Settings page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'TIMELINE_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <!--
+  <div class="counter">
+  <page-counter initial="000000"></page-counter>
+  </div>
+  -->
+
+  <ion-list>
+    <ion-item>
+      <div id="clockdiv">
+      <div>
+        <span class="days"></span>
+        <div class="smalltext">Days</div>
+      </div>
+      <div>
+        <span class="hours"></span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+    </div>
+    </ion-item>
+
+    <ion-item text-wrap>
+      <button ion-item (click)="itemSelected(item)">
+      <h2>December 20, 2016</h2>
+      <p>Four officials -- two of Flint's former emergency managers, who reported directly to the governor, and two water plant officials -- are charged with felonies of false pretenses and conspiracy. They are accused of misleading the Michigan Department of Treasury into getting millions in bonds, and then misused the money to finance the construction of a new pipeline and force Flint's drinking water source to be switched to the Flint River.</p>
+      </button>
+    </ion-item>
+
+    <ion-item text-wrap>
+      <button ion-item (click)="itemSelected(item)">
+      <h2>November 10, 2016</h2>
+      <p>The state of Michigan and city of Flint are ordered to deliver bottled water to homes where the government hasn't checked to ensure that filters are working properly. In court documents, the leader of a nonprofit group helping residents said that as many as 52% of the water filters installed in a sample of more than 400 homes had problems.</p>
+      </button>
+    </ion-item>
+
+    <ion-item text-wrap>
+      <button ion-item (click)="itemSelected(item)">
+      <h2>November 2016</h2>
+      <p>Dennis Walters, the husband of Flint advocate Lee-Anne Walters, files a complaint claiming that he is being mistreated at work by superiors and colleagues who resent his wife's activism. Walters, a Navy veteran who works at a police precinct at the Naval Station Norfolk, says that he has been scheduled to work long hours with no breaks and denied opportunities to expand his skill set via training. The family relocated to Virginia because of the water problems in Flint.</p>
+      </button>
+    </ion-item>
+
+    <ion-item text-wrap>
+      <button ion-item (click)="itemSelected(item)">
+      <h2>October 18, 2016</h2>
+      <p>The ACLU of Michigan files a class action lawsuit against school districts in Flint for exposing students to tainted water and inadequately testing children for learning disabilities that may have been caused by ingesting lead.</p>
+      </button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

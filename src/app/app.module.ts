@@ -16,6 +16,8 @@ import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { MenuPage } from '../pages/menu/menu';
 import { SettingsPage } from '../pages/settings/settings';
+import { TimelinePage } from '../pages/timeline/timeline';
+import { CounterPage } from '../pages/counter/counter';
 import { SearchPage } from '../pages/search/search';
 
 import { User } from '../providers/user';
@@ -64,6 +66,8 @@ let pages = [
   ItemDetailPage,
   ItemCreatePage,
   MenuPage,
+  TimelinePage,
+  CounterPage,
   SettingsPage,
   SearchPage
 ];

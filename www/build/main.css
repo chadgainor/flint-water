@@ -22223,6 +22223,56 @@ sub {
   }
 }
 
+page-counter {
+  font-family: sans-serif;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+body {
+  text-align: center;
+  background: #00ECB9;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+page-counter {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+page-counter > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #00BF96;
+  display: inline-block;
+}
+
+page-counter div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816A;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
 page-item-create .profile-image-wrapper {
   text-align: center;
   margin: 20px 0;
@@ -22269,4 +22319,46 @@ page-item-detail .item-detail {
 page-map #map {
   width: 100%;
   height: 100%;
+}
+
+body {
+  text-align: center;
+  background: #00ECB9;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #00BF96;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816A;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
 }
