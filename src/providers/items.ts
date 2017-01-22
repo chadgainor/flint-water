@@ -23,9 +23,10 @@ export class Items {
 
   query(params?: any){
 
-     this.api.get('news').subscribe(
-       let json = data.json(),
-       console.log(json['news']['value']),
+     this.api.get('news').subscribe( data => {
+
+       let json = data.json();
+       //console.log(json['news']['value']),
        let values = json['news']['value'];
        if(values){
          for(let item of values){
@@ -35,7 +36,7 @@ export class Items {
           }
       }
 
-    );
+    });
 //console.log(this.items);
 return this.items;
 };
