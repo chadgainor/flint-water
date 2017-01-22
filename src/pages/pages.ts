@@ -16,4 +16,4 @@ export const MainPage = TabsPage;
 export const Tab1Root = MapPage;
 export const Tab2Root = CardsPage;
 export const Tab3Root = TimelinePage;
-export const Tab4Root = TimelinePage;
+export const Tab4Root = ListMasterPage;

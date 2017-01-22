@@ -22304,6 +22304,10 @@ page-item-detail .item-detail {
   position: absolute;
 }
 
+page-map {
+  transition: opacity 150ms ease-in;
+}
+
 page-map #map {
   width: 100%;
   height: 100%;

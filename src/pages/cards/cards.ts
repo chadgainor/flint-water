@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { Items } from '../../providers/providers';
+import { Item } from '../../models/item';
+
 /*
   Generated class for the Cards page.
 
@@ -14,7 +17,18 @@ import { NavController } from 'ionic-angular';
 export class CardsPage {
   cardItems: any[];
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public items: Items) {
+
+    this.cardItems = this.items.query();
+  }
+
+  /**
+   * The view loaded, let's query our items for the list
+   */
+  ionViewDidLoad() {
+  }
+
+  /*constructor(public navCtrl: NavController) {
     this.cardItems = [
       {
         user: {
@@ -46,7 +60,7 @@ export class CardsPage {
         title: 'Flint, Mich.’s Water Crisis Continues; Latest Events Prove It’s Far From Over',
         content: 'The people of Flint, Mich., still do not have clean water, and there does not appear to be a definite end in sight to the need for water filters and bottled water for everything from bathing to cooking more than a year after Mayor Karen Weaver called a state of emergency because of elevated lead levels in the city\’s drinking water.'
       }
-    ];
+    ];*/
 
-  }
+  //}
 }

@@ -23,7 +23,7 @@ import { SearchPage } from '../pages/search/search';
 import { User } from '../providers/user';
 import { Api } from '../providers/api';
 import { Settings } from '../providers/settings';
-import { Items } from '../mocks/providers/items';
+import { Items } from '../providers/items';
 
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
 
@@ -69,7 +69,7 @@ let pages = [
   TimelinePage,
   CounterPage,
   SettingsPage,
-  SearchPage
+  SearchPage,
 ];
 
 export function declarations() {
@@ -87,7 +87,6 @@ export function providers() {
     User,
     Api,
     Items,
-
     { provide: Settings, useFactory: provideSettings, deps: [ Storage ] },
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler }

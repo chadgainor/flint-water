@@ -21,8 +21,8 @@
           <img [src]="item.profilePic" />
         </ion-avatar>
         <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
-        <ion-note item-right *ngIf="item.note">{{item.note}}</ion-note>
+        <p>{{item.description}}</p>
+        <ion-note item-right *ngIf="item.note">{{item.about.name}}</ion-note>
       </button>
 
       <ion-item-options>
