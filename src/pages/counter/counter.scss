@@ -10,16 +10,16 @@ page-counter {
 }
 
 #clockdiv > h1{
+  font-weight: 75;
   font-size: 19px;
   color: #fff;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #clockdiv > div{
   font-weight: 100;
   text-align: center;
-  font-size: 20px;
   padding-top: 0px;
 	border-radius: 2px;
 	background: #00BF96;
@@ -28,6 +28,7 @@ page-counter {
 
 #clockdiv div > span{
 	//padding: 5px;
+  font-size: 20px;
   margin-top: 0px;
 	border-radius: 1px;
 	background: #00816A;
