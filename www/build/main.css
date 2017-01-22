@@ -22223,54 +22223,41 @@ sub {
   }
 }
 
-page-counter {
+#clockdiv {
   font-family: sans-serif;
-  display: inline-block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-body {
-  text-align: center;
   background: #00ECB9;
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
-h1 {
-  color: #396;
-  font-weight: 100;
-  font-size: 40px;
-  margin: 40px 0px 20px;
-}
-
-page-counter {
-  font-family: sans-serif;
   color: #fff;
-  display: inline-block;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+#clockdiv > h1 {
+  font-size: 19px;
+  color: #fff;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#clockdiv > div {
   font-weight: 100;
   text-align: center;
-  font-size: 30px;
-}
-
-page-counter > div {
-  padding: 10px;
-  border-radius: 3px;
+  font-size: 20px;
+  padding-top: 0px;
+  border-radius: 2px;
   background: #00BF96;
   display: inline-block;
 }
 
-page-counter div > span {
-  padding: 15px;
-  border-radius: 3px;
+#clockdiv div > span {
+  margin-top: 0px;
+  border-radius: 1px;
   background: #00816A;
   display: inline-block;
 }
 
 .smalltext {
-  padding-top: 5px;
-  font-size: 16px;
+  padding-top: 1px;
+  font-size: 8px;
 }
 
 page-item-create .profile-image-wrapper {
@@ -22333,6 +22320,10 @@ h1 {
   font-weight: 100;
   font-size: 40px;
   margin: 40px 0px 20px;
+}
+
+#clockitem > h1 {
+  font-size: 5px;
 }
 
 #clockdiv {

@@ -2,24 +2,25 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'page-counter',
-  template: '{{time_str}}'
+  templateUrl: 'counter.html'
 })
 export class CounterPage {
   milliseconds: number = 0;
   time_str: string;
+  time: any;
   initial: string;
 
   ngOnInit() {
         //this.milliseconds = parseInt(this.initial);
         this.milliseconds = parseInt("000000");
-        this.time_str = this.convertTime(this.milliseconds);
+        this.time = this.convertTime(this.milliseconds);
   }
 
 
   constructor() {
     setInterval(()=>{
               this.milliseconds = this.milliseconds + 1000;
-              this.time_str = this.convertTime(this.milliseconds);
+              this.time = this.convertTime(this.milliseconds);
     }, 1000);
   }
 
@@ -33,6 +34,7 @@ export class CounterPage {
     let sec: number = milliseconds / 1000;
     let hours, minutes, seconds: number;
     let hours_str, minutes_str, seconds_str: string;
+    let h, m, s: string;
 
     hours = Math.floor(((sec % 31536000) % 86400) / 3600);
     hours_str = (hours <=9) ? '0' + hours.toString() : hours.toString() ;
@@ -43,7 +45,8 @@ export class CounterPage {
     seconds = Math.floor(((sec % 31536000) % 86400) % 3600) % 60;
     seconds_str = (seconds <=9) ? '0' + seconds.toString() : seconds.toString() ;
 
-    return hours_str +':'+ minutes_str +':'+ seconds_str;
+    //return hours_str +':'+ minutes_str +':'+ seconds_str;
+    return {h: hours_str, m: minutes_str, s: seconds_str};
   }
 
 }
